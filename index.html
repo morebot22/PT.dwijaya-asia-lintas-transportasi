@@ -38,6 +38,7 @@
       font-weight: 500;
     }
     .hero {
+      position: relative;
       background-image: url('https://images.unsplash.com/photo-1581090700227-1d1f6d5df93b?auto=format&fit=crop&w=1400&q=80');
       background-size: cover;
       background-position: center;
@@ -48,10 +49,21 @@
       text-align: center;
       color: white;
     }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
     .hero h2 {
+      position: relative;
       background-color: rgba(128, 0, 0, 0.8);
       padding: 1rem 2rem;
       border-radius: 10px;
+      z-index: 1;
     }
     section {
       padding: 3rem 2rem;
@@ -174,13 +186,13 @@
 
   <section id="kontak">
     <h2>Kontak</h2>
-    <p>Email: <a href="mailto:alyalulu.lh@gmail.com">alyalulu.lh@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/62895330574944" target="_blank">0895-3305-74944</a></p>
+    <p>Email: <a href="mailto:marketing@ptdwijaya.com" style="color: #800000;">marketing@ptdwijaya.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6281226782642" target="_blank" style="color: #800000;">0812-2678-2642</a></p>
   </section>
 
   <section style="background-color: #f0f0f0; padding: 2rem 1rem;">
     <h2 style="color: #7c0a02;">Hubungi Kami</h2>
-    <form action="mailto:alyalulu.lh@gmail.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
+    <form action="mailto:marketing@ptdwijaya.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
       <label>Nama:<br><input type="text" name="nama" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
       <label>Email:<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
       <label>Pesan:<br><textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea></label>
@@ -192,7 +204,7 @@
     &copy; 2025 PT Dwijaya Asia Lintas Transportasi. Seluruh hak cipta dilindungi.
   </footer>
 
-  <a href="https://wa.me/62895330574944" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/6281226782642" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
   </a>
 </body>
