@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT Dwijaya Asia Lintas Transportasi</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -19,7 +18,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
     }
     header .logo {
       display: flex;
@@ -41,7 +39,7 @@
     }
     .hero {
       position: relative;
-      background-image: url('https://images.unsplash.com/photo-1581090700227-1d1f6d5df93b?auto=format&fit=crop&w=1400&q=80');
+      background-image: url('https://images.unsplash.com/photo-1598214886806-d6d861d1f67e?auto=format&fit=crop&w=1400&q=80');
       background-size: cover;
       background-position: center;
       height: 400px;
@@ -83,7 +81,6 @@
       border-radius: 12px;
       padding: 1.5rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      background-color: white;
     }
     footer {
       background-color: #1f1f1f;
@@ -115,26 +112,16 @@
       width: 30px;
       height: 30px;
     }
-    .slider {
-      max-width: 1000px;
-      margin: 2rem auto;
-      position: relative;
-      overflow: hidden;
+    .image-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .image-section img {
+      max-width: 100%;
+      height: auto;
       border-radius: 10px;
-    }
-    .slides {
-      display: flex;
-      width: 300%;
-      animation: slide 12s infinite;
-    }
-    .slides img {
-      width: 100%;
-    }
-    @keyframes slide {
-      0% { transform: translateX(0%); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      100% { transform: translateX(0%); }
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -153,18 +140,15 @@
   </header>
 
   <section class="hero" id="beranda">
-    <h2 data-aos="fade-down">Solusi Logistik Andal & Terpercaya di Jawa dan Bali</h2>
+    <h2>Solusi Logistik Andal & Terpercaya di Jawa dan Bali</h2>
   </section>
 
-  <div class="slider" data-aos="fade-up">
-    <div class="slides">
-      <img src="https://images.unsplash.com/photo-1610913361049-813d8333810b?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 1">
-      <img src="https://images.unsplash.com/photo-1565618421810-3b51c605b6e1?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 2">
-      <img src="https://images.unsplash.com/photo-1521223619409-3f928f60ef3c?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 3">
-    </div>
+  <div class="image-section">
+    <img src="https://images.unsplash.com/photo-1560857950-0f49c93873c4?auto=format&fit=crop&w=1400&q=80" alt="Truk Kontainer 1">
+    <p><strong>Armada truk modern siap mengantarkan logistik Anda</strong></p>
   </div>
 
-  <section id="tentang" data-aos="fade-right">
+  <section id="tentang">
     <h2>Tentang Kami</h2>
     <p>
       PT Dwijaya Asia Lintas Transportasi adalah perusahaan yang bergerak dalam bidang jasa transportasi darat menggunakan armada truk.
@@ -172,7 +156,12 @@
     </p>
   </section>
 
-  <section id="layanan" data-aos="fade-left">
+  <div class="image-section">
+    <img src="https://images.unsplash.com/photo-1614007439486-2f6a0b4193df?auto=format&fit=crop&w=1400&q=80" alt="Truk Kontainer 2">
+    <p><strong>Proses bongkar muat yang efisien dan profesional</strong></p>
+  </div>
+
+  <section id="layanan">
     <h2>Layanan Kami</h2>
     <div class="services">
       <div class="service-box">
@@ -190,23 +179,43 @@
     </div>
   </section>
 
-  <section id="kontak" data-aos="fade-up">
+  <div class="image-section">
+    <img src="https://images.unsplash.com/photo-1572569511264-4c80c1c1b9fd?auto=format&fit=crop&w=1400&q=80" alt="Truk Kontainer 3">
+    <p><strong>Area layanan kami mencakup seluruh wilayah Jawa dan Bali</strong></p>
+  </div>
+
+  <div class="image-section">
+    <img src="https://images.unsplash.com/photo-1607878301491-bffdc073bfe1?auto=format&fit=crop&w=1400&q=80" alt="Truk Kontainer 4">
+    <p><strong>Kepuasan pelanggan adalah prioritas kami</strong></p>
+  </div>
+
+  <div class="image-section">
+    <img src="https://images.unsplash.com/photo-1551700704-3c4ef8f5fba7?auto=format&fit=crop&w=1400&q=80" alt="Truk Kontainer 5">
+    <p><strong>Siap melayani berbagai kebutuhan logistik perusahaan Anda</strong></p>
+  </div>
+
+  <section id="kontak">
     <h2>Kontak</h2>
-    <p>Email: <a href="mailto:alyalulu.lh@gmail.com" style="color: #800000;">alyalulu.lh@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/6289533057494" target="_blank" style="color: #800000;">0895-3305-7494</a></p>
+    <p>Email: <a href="mailto:marketing@ptdwijaya.com" style="color: #800000;">marketing@ptdwijaya.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6281226782642" target="_blank" style="color: #800000;">0812-2678-2642</a></p>
+  </section>
+
+  <section style="background-color: #f0f0f0; padding: 2rem 1rem;">
+    <h2 style="color: #7c0a02;">Hubungi Kami</h2>
+    <form action="mailto:marketing@ptdwijaya.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
+      <label>Nama:<br><input type="text" name="nama" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Email:<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Pesan:<br><textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea></label>
+      <button type="submit" style="background-color: #7c0a02; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px;">Kirim Pesan</button>
+    </form>
   </section>
 
   <footer>
     &copy; 2025 PT Dwijaya Asia Lintas Transportasi. Seluruh hak cipta dilindungi.
   </footer>
 
-  <a href="https://wa.me/6289533057494" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/6281226782642" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
   </a>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
