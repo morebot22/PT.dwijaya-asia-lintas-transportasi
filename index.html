@@ -12,7 +12,7 @@
       background-color: #fff;
     }
     header {
-      background-color: #800000; /* merah marun */
+      background-color: #800000;
       color: white;
       padding: 1rem 2rem;
       display: flex;
@@ -78,9 +78,9 @@
       margin-top: 3rem;
     }
     a {
-      color: #fff;
+      color: #800000;
+      font-weight: bold;
     }
-    /* Tombol WA mengambang */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -120,6 +120,10 @@
     <h2>Solusi Logistik Andal & Terpercaya di Jawa dan Bali</h2>
   </section>
 
+  <section style="text-align: center; padding: 2rem;">
+    <img src="https://images.unsplash.com/photo-1604089328715-68446a6b3a47?auto=format&fit=crop&w=1400&q=80" alt="Truk Logistik Tambahan" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 1rem;" />
+  </section>
+
   <section id="tentang">
     <h2>Tentang Kami</h2>
     <p>
@@ -152,11 +156,20 @@
     <p>WhatsApp: <a href="https://wa.me/62895330574944" target="_blank">0895-3305-74944</a></p>
   </section>
 
+  <section style="background-color: #f0f0f0; padding: 2rem 1rem;">
+    <h2 style="color: #7c0a02;">Hubungi Kami</h2>
+    <form action="mailto:alyalulu.lh@gmail.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
+      <label>Nama:<br><input type="text" name="nama" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Email:<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Pesan:<br><textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea></label>
+      <button type="submit" style="background-color: #7c0a02; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px;">Kirim Pesan</button>
+    </form>
+  </section>
+
   <footer>
     &copy; 2025 PT Dwijaya Asia Lintas Transportasi. Seluruh hak cipta dilindungi.
   </footer>
 
-  <!-- Tombol WhatsApp Mengambang -->
   <a href="https://wa.me/62895330574944" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
   </a>
