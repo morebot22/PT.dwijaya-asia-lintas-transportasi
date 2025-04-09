@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Dwijaya Asia Lintas Transportasi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+    header {
+      background-color: #800000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1d1f6d5df93b?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero h2 {
+      position: relative;
+      background-color: rgba(128, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-box {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+    }
+    .slider {
+      max-width: 1000px;
+      margin: 2rem auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 20s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      20%  { transform: translateX(0); }
+      25%  { transform: translateX(-100%); }
+      45%  { transform: translateX(-100%); }
+      50%  { transform: translateX(-200%); }
+      70%  { transform: translateX(-200%); }
+      75%  { transform: translateX(-300%); }
+      95%  { transform: translateX(-300%); }
+      100% { transform: translateX(-400%); }
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/truck.png" alt="Logo Sementara" />
+      <h1>PT Dwijaya</h1>
+    </div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda" data-aos="fade-down">
+    <h2>Solusi Logistik Andal & Terpercaya di Jawa dan Bali</h2>
+  </section>
+
+  <div class="slider" data-aos="fade-up">
+    <div class="slides">
+      <img src="https://images.unsplash.com/photo-1604089328715-68446a6b3a47?auto=format&fit=crop&w=1400&q=80" alt="Truk 1" />
+      <img src="https://images.unsplash.com/photo-1614288448087-74fc5f76f672?auto=format&fit=crop&w=1400&q=80" alt="Truk 2" />
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b6?auto=format&fit=crop&w=1400&q=80" alt="Truk 3" />
+      <img src="https://images.unsplash.com/photo-1597003639852-f12b2a5768a5?auto=format&fit=crop&w=1400&q=80" alt="Truk 4" />
+      <img src="https://images.unsplash.com/photo-1610986603163-b9379c4df780?auto=format&fit=crop&w=1400&q=80" alt="Truk 5" />
+    </div>
+  </div>
+
+  <section id="tentang" data-aos="fade-up">
+    <h2>Tentang Kami</h2>
+    <p>
+      PT Dwijaya Asia Lintas Transportasi adalah perusahaan yang bergerak dalam bidang jasa transportasi darat menggunakan armada truk.
+      Kami melayani pengiriman barang dan logistik untuk wilayah Jawa dan Bali, dengan komitmen tinggi terhadap ketepatan waktu, keamanan, dan profesionalitas.
+    </p>
+  </section>
+
+  <section id="layanan" data-aos="fade-up">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Pengiriman Antar Kota</h3>
+        <p>Layanan pengiriman barang dengan armada truk ke berbagai kota di Jawa dan Bali dengan aman dan tepat waktu.</p>
+      </div>
+      <div class="service-box">
+        <h3>Distribusi Barang Komersial</h3>
+        <p>Distribusi barang retail dan grosir dari gudang ke toko atau pelanggan Anda.</p>
+      </div>
+      <div class="service-box">
+        <h3>Sewa Armada Truk</h3>
+        <p>Menyediakan truk untuk disewa harian hingga bulanan, lengkap dengan sopir profesional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" data-aos="fade-up">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:marketing@ptdwijaya.com" style="color: #800000;">marketing@ptdwijaya.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6281226782642" target="_blank" style="color: #800000;">0812-2678-2642</a></p>
+    <iframe src="https://maps.google.com/maps?q=jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 PT Dwijaya Asia Lintas Transportasi. Seluruh hak cipta dilindungi.
+  </footer>
+
+  <a href="https://wa.me/6281226782642" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
