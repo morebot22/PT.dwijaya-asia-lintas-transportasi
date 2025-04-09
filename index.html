@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT Dwijaya Asia Lintas Transportasi</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: #333;
       background-color: #fff;
-      scroll-behavior: smooth;
     }
     header {
       background-color: #800000;
@@ -65,21 +66,11 @@
       padding: 1rem 2rem;
       border-radius: 10px;
       z-index: 1;
-      animation: fadeInDown 1.5s ease-in-out;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
     }
     section {
       padding: 3rem 2rem;
       max-width: 1000px;
       margin: auto;
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
     }
     .services {
       display: grid;
@@ -134,21 +125,15 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin-bottom: 1rem;
     }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 1rem;
-      padding: 1rem 0;
+    .swiper-container {
+      width: 100%;
+      padding: 2rem 0;
     }
-    .slider img {
-      scroll-snap-align: center;
-      max-width: 100%;
+    .swiper-slide img {
+      width: 100%;
       height: auto;
-      border-radius: 10px;
-      flex: 0 0 auto;
-      width: 300px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -170,13 +155,17 @@
     <h2>Solusi Logistik Andal & Terpercaya di Jawa dan Bali</h2>
   </section>
 
-  <div class="slider image-section">
-    <img src="https://images.unsplash.com/photo-1620464212341-7c58027c6e2b?auto=format&fit=crop&w=800&q=80" alt="Truk 1">
-    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9d?auto=format&fit=crop&w=800&q=80" alt="Truk 2">
-    <img src="https://images.unsplash.com/photo-1593079831268-3381b9b4f178?auto=format&fit=crop&w=800&q=80" alt="Truk 3">
+  <div class="swiper-container" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1615719413546-58e0ff58b9a4?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 1"></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1605616588903-cdd511e78c3a?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 2"></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk 3"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 
-  <section id="tentang">
+  <section id="tentang" data-aos="fade-up">
     <h2>Tentang Kami</h2>
     <p>
       PT Dwijaya Asia Lintas Transportasi adalah perusahaan yang bergerak dalam bidang jasa transportasi darat menggunakan armada truk.
@@ -184,7 +173,7 @@
     </p>
   </section>
 
-  <section id="layanan">
+  <section id="layanan" data-aos="fade-up">
     <h2>Layanan Kami</h2>
     <div class="services">
       <div class="service-box">
@@ -202,20 +191,10 @@
     </div>
   </section>
 
-  <section id="kontak">
+  <section id="kontak" data-aos="fade-up">
     <h2>Kontak</h2>
-    <p>Email: <a href="mailto:alyalulu.lh@gmail.com" style="color: #800000; font-weight: bold;">alyalulu.lh@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/62895330574944" target="_blank" style="color: #800000; font-weight: bold;">0895-3305-7494</a></p>
-  </section>
-
-  <section style="background-color: #f0f0f0; padding: 2rem 1rem;">
-    <h2 style="color: #7c0a02;">Hubungi Kami</h2>
-    <form action="mailto:alyalulu.lh@gmail.com" method="POST" enctype="text/plain" style="max-width: 600px; margin: auto;">
-      <label>Nama:<br><input type="text" name="nama" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
-      <label>Email:<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
-      <label>Pesan:<br><textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea></label>
-      <button type="submit" style="background-color: #7c0a02; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px;">Kirim Pesan</button>
-    </form>
+    <p>Email: <a href="mailto:alyalulu.lh@gmail.com" style="color: #800000;">alyalulu.lh@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/62895330574944" target="_blank" style="color: #800000;">0895-3305-74944</a></p>
   </section>
 
   <footer>
@@ -225,5 +204,21 @@
   <a href="https://wa.me/62895330574944" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
   </a>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
+    AOS.init();
+  </script>
 </body>
 </html>
