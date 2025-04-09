@@ -10,6 +10,7 @@
       margin: 0;
       background-color: #f4f6f8;
       color: #2c3e50;
+      animation: fadeIn 1.5s ease;
     }
 
     header {
@@ -63,6 +64,28 @@
       font-size: 0.9rem;
       color: #7f8c8d;
     }
+
+    .image-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeUp 1.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -79,6 +102,9 @@
 
   <section>
     <h2>Tentang Perusahaan</h2>
+    <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1603775020644-eb8decd79924?auto=format&fit=crop&w=1400&q=80" alt="Armada Truk PT Dwijaya">
+    </div>
     <p><strong>PT Dwijaya Asia Lintas Transportasi</strong> adalah perusahaan yang bergerak di bidang jasa transportasi dan logistik, dengan fokus pada pengiriman barang menggunakan armada <strong>truk</strong>. Kami melayani pengiriman ke berbagai wilayah di <strong>Pulau Jawa dan Bali</strong>, dengan mengedepankan kecepatan, ketepatan waktu, serta keamanan dalam setiap pengiriman. Didukung oleh tim profesional dan sistem manajemen terintegrasi, kami hadir sebagai solusi transportasi terpercaya untuk kebutuhan individu maupun perusahaan. Komitmen kami adalah memberikan layanan terbaik untuk mendukung kelancaran bisnis dan distribusi pelanggan kami.</p>
   </section>
 
